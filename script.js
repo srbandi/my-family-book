@@ -11,10 +11,15 @@ var reasons = [
   ];
   
   var i = 0;
-  function nextslide() {  document.getElementById("reasontext").innerHTML = reasons[i];
+  function moveslide() 
+  {  document.getElementById("reasontext").innerHTML = reasons[i];
     document.getElementById("album").src = images[i];
     i++;
-                        document.getElementById("audio").play();
+    if(i==3){
+
+      i=0;
+
+    }
    
   }
   
